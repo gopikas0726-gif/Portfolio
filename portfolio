@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gopika Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(-45deg,#0f172a,#1e1b4b,#6d28d9,#9333ea);
+    background-size:400% 400%;
+    animation:bgMove 10s ease infinite;
+    color:white;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:#d8b4fe;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+.hero-card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    padding:40px;
+    border-radius:30px;
+    width:90%;
+    max-width:650px;
+    box-shadow:0 0 40px rgba(255,255,255,0.2);
+}
+
+.profile-avatar{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    background:rgba(255,255,255,0.15);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:80px;
+    margin:auto;
+}
+
+.hero h1{
+    margin-top:20px;
+    font-size:48px;
+}
+
+.hero h3{
+    margin-top:10px;
+    color:#ddd;
+}
+
+.hero p{
+    margin-top:15px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    background:white;
+    color:#6d28d9;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:25px;
+    line-height:1.8;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    padding:12px 24px;
+    background:rgba(255,255,255,0.15);
+    border-radius:30px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(255,255,255,0.08);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Gopika</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-card">
+
+        <div class="profile-avatar">G</div>
+
+        <h1>Gopika</h1>
+
+        <h3>BCA Student | Full Stack Developer</h3>
+
+        <p>
+            Passionate about Full Stack Development and creating modern web applications.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="card">
+        Hello! I'm Gopika, a BCA student interested in Full Stack Development.
+        I enjoy building websites and learning new technologies.
+        My goal is to become a successful Full Stack Developer.
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="title">Skills</h2>
+
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Express.js</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">GitHub</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="title">Projects</h2>
+
+    <div class="projects">
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Modern portfolio with animations.</p>
+        </div>
+
+        <div class="project">
+            <h3>Student Management System</h3>
+            <p>CRUD application with database.</p>
+        </div>
+
+        <div class="project">
+            <h3>E-Commerce Website</h3>
+            <p>Online shopping platform.</p>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="title">Education</h2>
+
+    <div class="card">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p>2024 - 2027</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">Contact</h2>
+
+    <div class="card">
+        <p>📧 gopika56@gmail.com</p>
+        <p>📍 Tamil Nadu, India</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Gopika | Full Stack Developer
+</footer>
+
+</body>
+</html>
